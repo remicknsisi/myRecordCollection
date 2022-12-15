@@ -1,0 +1,22 @@
+{
+    "records": [
+      {
+        "id": 1,
+        "title": "SOUR",
+        "artist": "Olivia Rodrigo",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_7ed46317-3de3-4582-a0eb-cd136bf25c62?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 25.81,
+        "A": ["brutal", "traitor", "drivers license", "1 step forward, 3 steps back", "deja vu", "good 4 u"],
+        "B": ["enough for you", "happier", "jealousy, jealousy", "favorite crime", "hope ur ok"]
+      },
+      {
+        "id": 2,
+        "title": "Lover",
+        "artist": "Taylor Swift",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_361b1820-bb0a-430e-9515-91fee8c70281?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 29.90,
+        "A": ["I Forgot That You Existed", "Cruel Summer", "Lover", "The Man", "The Archer"],
+        "B": ["I Think He Knows", "Miss Americana & The Heartbreak Prince", "Paper Rings", "Cornelia Street"]
+      },
+    ]
+  }
