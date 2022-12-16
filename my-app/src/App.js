@@ -7,6 +7,8 @@ import RecordShop from "./components/RecordShop";
 
 function App() {
   const [records, setRecords] = useState([])
+  const [isInCollection, setIsInCollection] = useState(false)
+    //need this to determine what we show in the collection vs in the store
 
   useEffect(() => {
     fetch('http://localhost:3000/records')
@@ -18,6 +20,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      <br></br>
       <Switch>
         <Route exact path="/collection">
           <MyCollection records={records}/>

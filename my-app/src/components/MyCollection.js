@@ -4,6 +4,7 @@ import Record from "./Record"
 function MyCollection({ records }) {
     // const [isEmpty, setIsEmpty] = useState(false)
 
+
     return (
     <div>
         <h2>Sick vinyls, bro!</h2>

@@ -89,6 +89,24 @@
         "value": 35,
         "sideA": ["Gaslighter", "Sleep at Night", "Texas Man", "Everybody Loves You", "For Her", "March March"],
         "sideB": ["My Best Friend's Weddings", "Tights On My Boat", "Julianna Calm Down", "Young Man", "Hope It/'s Something Good", "Set Me Free"]
+      },
+      {
+        "id": 11,
+        "title": "Rumours",
+        "artist": "Fleetwood Mac",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_f094bccf-301d-4acc-a967-0fb63dfbfe9a?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 23,
+        "sideA": ["Second Hand News", "Dreams", "Never Going Back Again", "Don/'t Stop", "Go Your Own Way", "Songbird"],
+        "sideB": ["The Chain", "You Make Loving Fun", "I Don/'t Want to Know", "Oh Daddy", "Gold Dust Woman"]
+      },
+      {
+        "id": 12,
+        "title": "Traveller",
+        "artist": "Chris Stapleton",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_7d968a9a-f746-4038-93c6-fb06991cb23d?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 26,
+        "sideA": ["Traveller", "Fire Away", "Tennessee Whiskey", "Parachute", "Whiskey And You", "Nobody To Blame", "More Of You"],
+        "sideB": ["When The Stars Come Out", "Daddy Doesn/'t Pray Anymore", "Might As Well Get Stoned", "Was It 26", "The Devil Named Music", "Outlaw State Of Mind", "Sometimes I Cry"]
       }
     ]
   }
