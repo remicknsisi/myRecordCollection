@@ -17,6 +17,78 @@
         "value": 29,
         "sideA": ["I Forgot That You Existed", "Cruel Summer", "Lover", "The Man", "The Archer"],
         "sideB": ["I Think He Knows", "Miss Americana & The Heartbreak Prince", "Paper Rings", "Cornelia Street"]
+      },
+      {
+        "id": 3,
+        "title": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+        "artist": "Billie Eilish",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_b92b5dfa-a71a-4c59-ae58-0e0b597f402c?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 26,
+        "sideA": ["!!!!!!!", "bad guy", "xanny", "you should see me in a crown", "all the good girls go to hell", "wish you were gay", "when the party's over"],
+        "sideB": ["8", "my strange addiction", "bury a friend", "ilomilo", "listen before i go", "i love you", "goodbye"]
+      },
+      {
+        "id": 4,
+        "title": "don't smile at me",
+        "artist": "Billie Eilish",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_4b84d10a-0353-40d7-aad1-9587c3d34c62?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 23,
+        "sideA": ["COPYCAT", "idontwannabeyouanymore", "my boy", "watch"],
+        "sideB": ["party favor", "bellyache", "ocean eyes", "hostage"]
+      },
+      {
+        "id": 5,
+        "title": "Harry's House",
+        "artist": "Harry Styles",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_8527d4b9-1e0e-4210-84c2-f641652aa5b8?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 38,
+        "sideA": ["Music For a Sushi Restaurant", "Late Night Talking", "Grapejuice", "As It Was", "Daylight", "Little Freak", "Matilda"],
+        "sideB": ["Cinema", "Day Dreaming", "Keep Driving", "Satellite", "Boyfriends", "Love Of My Life"]
+      },
+      {
+        "id": 6,
+        "title": "Midnights",
+        "artist": "Taylor Swift",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_d270440a-b129-4874-b8ea-13913b8dfe25?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 30,
+        "sideA": ["Lavender Haze", "Maroon", "Anti-Hero", "Snow On The Beach", "You're On Your Own, Kid", "Midnight Rain", "Question...?"],
+        "sideB": ["Vigilante Sh*t", "Bejeweled", "Labyrinth", "Karma", "Sweet Nothing", "Mastermind"]
+      },
+      {
+        "id": 7,
+        "title": "thank u, next",
+        "artist": "Ariana Grande",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_2f152c11-30bb-4c94-83a3-4fce85cc2f38?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 30,
+        "sideA": ["imagine", "needy", "NASA", "bloodline", "fake smile", "bad idea"],
+        "sideB": ["make up", "ghostin", "in my head", "7 rings", "thank u, next", "break up with your girlfriend, I'm bored"]
+      },
+      {
+        "id": 8,
+        "title": "RENAISSANCE",
+        "artist": "Beyonce",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_87efae6a-4a87-4e4e-a9da-251ffa634a94?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 40,
+        "sideA": ["I/'M THAT GIRL", "COZY", "ALIEN SUPERSTAR", "CUFF IT", "ENERGY", "BREAK MY SOUL", "CHURCH GIRL"],
+        "sideB": ["PLASTIC OFF THE SOFA", "VIRGO/'S GROOVE", "MOVE", "HEATED", "THIQUE", "ALL UP IN YOUR MIND", "AMERICA HAS A PROBLEM", "PURE/HONEY", "SUMMER RENAISSANCE"]
+      },
+      {
+        "id": 9,
+        "title": "Golden Hour",
+        "artist": "Kacey Musgraves",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_01c902bd-df5d-4ddb-976f-c576d16ae824?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 26,
+        "sideA": ["Slow Burn", "Lonely Weekend", "Butterflies", "Oh, What A World", "Mother", "Love Is A Wild Thing"],
+        "sideB": ["Space Cowboy", "Happy & Sad", "Velvet Elvis", "Wonder Woman", "High Horse", "Golden Hour", "Rainbow"]
+      },
+      {
+        "id": 10,
+        "title": "Gaslighter",
+        "artist": "The Chicks",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_9e735055-3761-4ca2-8b41-852c035d2538?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 35,
+        "sideA": ["Gaslighter", "Sleep at Night", "Texas Man", "Everybody Loves You", "For Her", "March March"],
+        "sideB": ["My Best Friend's Weddings", "Tights On My Boat", "Julianna Calm Down", "Young Man", "Hope It/'s Something Good", "Set Me Free"]
       }
     ]
   }
