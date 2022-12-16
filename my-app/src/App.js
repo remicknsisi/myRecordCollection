@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import NavBar from "../Navbar";
-import Home from "../Home";
-import MyCollection from "../MyCollection";
-import RecordShop from "../RecordShop";
+import NavBar from "./components/NavBar.js";
+import Home from "./components/Home.js";
+import MyCollection from "./components/MyCollection";
+import RecordShop from "./components/RecordShop";
 
 function App() {
   return (
