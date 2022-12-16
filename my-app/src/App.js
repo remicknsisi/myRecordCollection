@@ -26,7 +26,7 @@ function App() {
           <MyCollection records={records}/>
         </Route>
         <Route exact path="/shop">
-          <RecordShop records={records}/>
+          <RecordShop records={records} setRecords={setRecords}/>
         </Route>
         <Route exact path="/">
           <Home />
