@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Search() {
+function Search({ onSearchChange }) {
+    const [search, setSearch] = useState('')
 
   return (
     <div className="search">
@@ -8,9 +9,9 @@ function Search() {
       <input
         type="text"
         placeholder="Search records by title..."
-        // onChange={(e) => {
-        //   onSearchChange(e.target.value) 
-        //   onSearchPlant(search)}}
+        onChange={(e) => {
+            setSearch(e.target.value)
+            onSearchChange(search)}}
       />
     </div>
   );
