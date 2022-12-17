@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      My Vinyl Collector
+      <div className="title">My Vinyl Collector</div>
       <NavBar />
       <br></br>
       <Switch>

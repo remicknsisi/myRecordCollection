@@ -24,6 +24,7 @@ function NewRecordForm({ records, setRecords }) {
 
   return (
     <div className="submit-form" onSubmit={handleSubmit}>
+        Can't find what you're looking for? Add to our inventory here...
       <form >
         <input type="text" placeholder="Record title" />
         <input type="text" placeholder="Image URL" />

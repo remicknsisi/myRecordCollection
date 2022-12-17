@@ -6,6 +6,7 @@ import NewRecordForm from "./NewRecordForm"
 function RecordShop({ records, setRecords, onSearchChange, isInCollection, onPurchase }) {
   return (
     <div className="shop">
+        <div className="shop-name">Welcome to the Vinyl Shop!</div>
         <NewRecordForm records={records} setRecords={setRecords}/>
         <Search onSearchChange={onSearchChange}/>
         {records.map(record => {

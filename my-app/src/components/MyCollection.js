@@ -4,8 +4,8 @@ import Record from "./Record"
 function MyCollection({ records }) {
 
     return (
-    <div>
-        <h2>Sick vinyls, bro!</h2>
+    <div className="my-collection">
+        <div className="my-records">My Vinyls</div>
         <ul className="collection">
             {records.map(record => {
                 return (

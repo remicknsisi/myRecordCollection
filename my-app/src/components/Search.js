@@ -5,7 +5,7 @@ function Search({ onSearchChange }) {
 
   return (
     <div className="search">
-      <label htmlFor="search">Search Records:</label>
+      <label htmlFor="search">Search Records: </label>
       <input
         type="text"
         placeholder="Search records by title..."

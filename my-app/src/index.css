@@ -2,6 +2,8 @@
   color: #FF00CA;
   font-family: Tahoma;
   text-align: center;
+  display: inline-table;
+  padding: 25px;
 }
 
 button {
@@ -28,9 +30,49 @@ button {
 
 .App {
   font-family: Tahoma;
+
 }
 
 img {
   max-width: 300px;
   max-height: 300px;
+}
+
+.search {
+  padding: 25px;
+}
+
+.submit-form {
+  padding: 25px;
+}
+
+.my-collection {
+}
+
+.home {
+  text-align: center;
+  font-size:x-large;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  font-size:xx-large;
+  font-weight: bold;
+  background-color: #FF00CA;
+  padding: 25px;
+
+}
+
+.shop-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.my-records {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
 }
