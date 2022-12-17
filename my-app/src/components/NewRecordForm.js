@@ -1,6 +1,9 @@
 import React from "react";
+import { Redirect } from "react-router-dom";
 
 function NewRecordForm({ records, setRecords }) {
+
+    //add functionality to send to more details page when submitted using redirect after .then 
 
   function handleSubmit(e){
     e.preventDefault()

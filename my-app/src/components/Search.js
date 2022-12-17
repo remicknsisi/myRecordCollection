@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 function Search({ onSearchChange }) {
+
+    //need to fix search functionality
     const [search, setSearch] = useState('')
 
   return (

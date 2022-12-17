@@ -284,6 +284,128 @@
       "value": "15",
       "artist": "MGK",
       "id": 13
-    }
+    },
+    {
+        "id": 14,
+        "title": "Circles",
+        "artist": "Mac Miller",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_44dfbd9e-f892-40a6-bfd5-fd8ab3c0bff1?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 32,
+        "sideA": [
+          "Circles",
+          "Complicated",
+          "Blue World",
+          "Good News",
+          "I Can See",
+          "Everybody"
+        ],
+        "sideB": [
+          "Woods",
+          "Hand Me Downs",
+          "That/'s On Me",
+          "Hands",
+          "Surf",
+          "Once A Day"
+        ]
+      },
+      {
+        "id": 15,
+        "title": "Flower Boy",
+        "artist": "Tyler, the Creator",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_50ac7dba-7291-4cc3-9c1e-d7f4b555f160?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 20,
+        "sideA": [
+          "Foreword",
+          "Where This Flower Blooms",
+          "Sometimes...",
+          "See You Again",
+          "Who Dat Boy",
+          "Pothole",
+          "Garden Shed"
+        ],
+        "sideB": [
+          "Boredom",
+          "I Ain/'t Got Time!",
+          "911/Mr. Lonely",
+          "Droppin Seeds",
+          "November",
+          "Glitter",
+          "Enjoy Right Now, Today"
+        ]
+      },
+      {
+        "id": 16,
+        "title": "Awaken, My Love!",
+        "artist": "Childish Gambino",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_fc36beac-8205-414c-aef5-5b90aa3d3261?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 28,
+        "sideA": [
+          "Me and Your Mama",
+          "Have Some Love",
+          "Boogieman",
+          "Zombies",
+          "Riot",
+          "Redbone"
+        ],
+        "sideB": [
+          "California",
+          "Terrified",
+          "Baby Boy",
+          "The Night Me And Your Mama Met",
+          "Stand Tall"
+        ]
+      },
+      {
+        "id": 17,
+        "title": "Starboy",
+        "artist": "The Weeknd",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_d7140dc5-a382-4d97-be96-1b9063be7d70?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 40,
+        "sideA": [
+          "Starboy",
+          "Party Monster",
+          "False Alarm",
+          "Reminder",
+          "Rockinâ€™",
+          "Secrets",
+          "True Colors",
+          "Stargirl Interlude",
+          "Sidewalks",
+          "Six Feet Under"
+        ],
+        "sideB": [
+          "Love to Lay",
+          "A Lonely Night",
+          "Attention",
+          "Ordinary Life",
+          "Nothing Without You",
+          "All I Know",
+          "Die for You",
+          "I Feel It Coming"
+        ]
+      },
+      {
+        "id": 18,
+        "title": "Born to Die",
+        "artist": "Lana Del Rey",
+        "image": "https://target.scene7.com/is/image/Target/GUEST_974a829c-8e1c-45a8-8e23-0a4baade1bec?wid=800&hei=800&qlt=80&fmt=pjpeg",
+        "value": 16,
+        "sideA": [
+          "Born to Die",
+          "Off to the Races",
+          "Blue Jeans",
+          "Video Games",
+          "Diet Mountain Dew",
+          "National Anthem"
+        ],
+        "sideB": [
+          "Dark Paradise",
+          "Radio",
+          "Carmen",
+          "Million Dollar Man",
+          "Summertime Sadness",
+          "This Is What Makes Us Girls"
+        ]
+      }
   ]
 }

@@ -24,7 +24,7 @@ function Record({ title, artist, image, value, sideA, sideB, isInCollection, onP
         <h4>Artist: {artist}</h4>
         <p>Price: ${value}</p>
         <button onClick={handleClick}>Purchase</button>
-        {/* {isInCollection ? <button onClick={handleClick}>Already Owned - Donate?</button> : <button onClick={handleClick}>Purchase</button>} */}
+        {/* need to make it so button only appears on shop page by filtering for record in collection state variable*/}
     </div>
   );
 }
