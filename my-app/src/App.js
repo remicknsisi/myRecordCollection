@@ -28,9 +28,9 @@ function App() {
     setRecordsToDisplay(newRecordToDisplay)
   }
 
-  function handlePurchase(){
+  function handlePurchase(newRecord){
     setIsInCollection(!isInCollection)
-    //set records In Collection here.. how can I access the record that was clicked?
+    setRecordsInCollection([...recordsInCollection, newRecord])
   }
 
 
@@ -41,7 +41,7 @@ function App() {
       <br></br>
       <Switch>
         <Route exact path="/collection">
-          <MyCollection records={recordsToDisplay} />
+          <MyCollection records={recordsInCollection} />
         </Route>
         <Route exact path="/shop">
           <RecordShop onPurchase={handlePurchase} isInCollection={isInCollection} records={recordsToDisplay} setRecords={setRecords} onSearchChange={handleSearchChange}/>
