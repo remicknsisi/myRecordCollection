@@ -1,0 +1,36 @@
+.record-card {
+  color: #FF00CA;
+  font-family: Tahoma;
+  text-align: center;
+}
+
+button {
+  color: #FF00CA;
+  background-color: #FFDE2D;
+  border-radius: 50px;
+}
+
+.nav {
+  background-color: #FF00CA;
+  text-align: center;
+  padding: 25px;
+}
+
+.nav-link {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.nav-link:hover {
+  background:#800080;
+}
+
+.App {
+  font-family: Tahoma;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}

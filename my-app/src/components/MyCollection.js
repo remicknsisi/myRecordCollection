@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Record from "./Record"
 
 function MyCollection({ records }) {
-    // const [isEmpty, setIsEmpty] = useState(false)
-
 
     return (
     <div>
