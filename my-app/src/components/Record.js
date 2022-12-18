@@ -23,6 +23,11 @@ function Record({ title, artist, image, value, sideA, sideB, isInCollection, onP
         <h3>Title: {title}</h3>
         <h4>Artist: {artist}</h4>
         <p>Price: ${value}</p>
+        <ul>
+        {/* {sideA.map(track => {
+            return (<li>{track}</li>)
+        })} */}
+        </ul>
         <button onClick={handleClick}>Purchase</button>
         {/* need to make it so button only appears on shop page by filtering for record in collection state variable*/}
     </div>

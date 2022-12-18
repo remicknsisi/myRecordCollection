@@ -11,8 +11,10 @@ function Search({ onSearchChange }) {
       <input
         type="text"
         placeholder="Search records by title..."
+        value={search}
         onChange={(e) => {
-            setSearch(e.target.value)
+            setSearch(() => e.target.value)
+            //need callback syntax here to update in real time
             onSearchChange(search)}}
       />
     </div>

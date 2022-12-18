@@ -8,7 +8,7 @@ function RecordShop({ records, setRecords, onSearchChange, isInCollection, onPur
     <div className="shop">
         <div className="shop-name">Welcome to the Vinyl Shop!</div>
         <NewRecordForm records={records} setRecords={setRecords}/>
-        <Search onSearchChange={onSearchChange}/>
+        <Search onSearchChange={onSearchChange} />
         <div className="records-container">
         {records.map(record => {
             return (

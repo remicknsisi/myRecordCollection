@@ -1,9 +1,9 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function NewRecordForm({ records, setRecords }) {
 
-    //add functionality to send to more details page when submitted using redirect after .then 
+  const history = useHistory();
 
   function handleSubmit(e){
     e.preventDefault()
@@ -22,7 +22,10 @@ function NewRecordForm({ records, setRecords }) {
       body: JSON.stringify(newRecord)
     })
     .then(response => response.json())
-    .then(newRecordData => setRecords([...records, newRecordData]))
+    .then(newRecordData => {
+        setRecords([...records, newRecordData])
+        history.push(`/shop/${newRecordData.id}`)
+    })
   }
 
   return (

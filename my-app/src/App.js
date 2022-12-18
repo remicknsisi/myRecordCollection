@@ -4,13 +4,13 @@ import NavBar from "./components/NavBar.js";
 import Home from "./components/Home.js";
 import MyCollection from "./components/MyCollection";
 import RecordShop from "./components/RecordShop";
+import RecordDetails from "./components/RecordDetails";
 
 function App() {
   const [records, setRecords] = useState([])
   const [isInCollection, setIsInCollection] = useState(false)
   const [recordsToDisplay, setRecordsToDisplay] = useState([])
   const [recordsInCollection, setRecordsInCollection] = useState([])
-    
 
   useEffect(() => {
     fetch('http://localhost:3000/records')
@@ -21,8 +21,9 @@ function App() {
   }, [])
 
   function handleSearchChange(searchTerm){
+    console.log(searchTerm)
     const newRecordToDisplay = records.filter(record => {
-      if (record.title.toLowerCase().includes(searchTerm.toLowerCase()))
+      if (record.title.toLowerCase().includes(searchTerm))
       return record
     })
     setRecordsToDisplay(newRecordToDisplay)
@@ -45,6 +46,9 @@ function App() {
         </Route>
         <Route exact path="/shop">
           <RecordShop onPurchase={handlePurchase} isInCollection={isInCollection} records={recordsToDisplay} setRecords={setRecords} onSearchChange={handleSearchChange}/>
+        </Route>
+        <Route exact path="/shop/:id">
+          <RecordDetails />
         </Route>
         <Route exact path="/">
           <Home />
