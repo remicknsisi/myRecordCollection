@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Record({ title, artist, image, value, sideA, sideB, isInCollection, onPurchase }) {
+function Record({ title, artist, image, value, id, sideA, sideB, isInCollection, onPurchase }) {
 
     function handleClick(e){
         const recordForCollection = {
@@ -23,11 +24,9 @@ function Record({ title, artist, image, value, sideA, sideB, isInCollection, onP
         <h3>Title: {title}</h3>
         <h4>Artist: {artist}</h4>
         <p>Price: ${value}</p>
-        <ul>
-        {/* {sideA.map(track => {
-            return (<li>{track}</li>)
-        })} */}
-        </ul>
+        <Link to={`/shop/${id}`}>More Details</Link>
+        <br></br>
+        <br></br>
         <button onClick={handleClick}>Purchase</button>
         {/* need to make it so button only appears on shop page by filtering for record in collection state variable*/}
     </div>

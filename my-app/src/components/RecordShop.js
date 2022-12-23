@@ -12,7 +12,7 @@ function RecordShop({ records, setRecords, onSearchChange, isInCollection, onPur
         <div className="records-container">
         {records.map(record => {
             return (
-                <Record onPurchase={onPurchase} isInCollection={isInCollection} key={record.id} title={record.title} artist={record.artist} image={record.image} value={record.value} sideA={record.sideA} sideB={record.sideB}/>
+                <Record onPurchase={onPurchase} isInCollection={isInCollection} key={record.id} title={record.title} artist={record.artist} id={record.id} image={record.image} value={record.value} sideA={record.sideA} sideB={record.sideB}/>
             )
         })}
         </div>
