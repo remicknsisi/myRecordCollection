@@ -8,7 +8,7 @@ function RecordInCollection({ record, onAdd }) {
         e.target.parentNode.remove()
         onAdd(value)
 
-        //also need to update the state in App componenet so that records in collection updates
+        //also need to update the state in App componenet so that records in collection update
     }
 
   return (
