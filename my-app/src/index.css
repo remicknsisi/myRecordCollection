@@ -88,3 +88,16 @@ img {
   font-weight: bold;
   font-size: larger;
 }
+
+.record-details {
+  text-align: center;
+}
+
+.tracks-container {
+  text-align: center;
+}
+
+.tracks {
+  display: inline-block;
+  text-align: left;
+}
