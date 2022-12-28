@@ -52,7 +52,7 @@ function App() {
           <RecordShop onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
         </Route>
         <Route exact path="/shop/:id">
-          <RecordDetails />
+          <RecordDetails records={records}/>
         </Route>
         <Route exact path="/">
           <Home />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function NewRecordForm({ records, setRecords, onSubmit }) {
+function NewRecordForm({ onSubmit }) {
 
   const [newTitle, setNewTitle] = useState('')
   const [newImage, setNewImage] = useState('')
