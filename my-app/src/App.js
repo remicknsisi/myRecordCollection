@@ -8,7 +8,6 @@ import RecordDetails from "./components/RecordDetails";
 
 function App() {
   const [records, setRecords] = useState([])
-  const [isInCollection, setIsInCollection] = useState(false)
   const [recordsInCollection, setRecordsInCollection] = useState([])
   const [search, setSearch] = useState('')
 
@@ -21,7 +20,6 @@ function App() {
   }, [])
 
   function handlePurchase(newRecord){
-    setIsInCollection(!isInCollection)
     setRecordsInCollection([...recordsInCollection, newRecord])
   }
   const recordsToDisplay = records.filter(record => record.title.toLowerCase().includes(search))
@@ -36,7 +34,7 @@ function App() {
           <MyCollection records={recordsInCollection} />
         </Route>
         <Route exact path="/shop">
-          <RecordShop onPurchase={handlePurchase} isInCollection={isInCollection} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
+          <RecordShop onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
         </Route>
         <Route exact path="/shop/:id">
           <RecordDetails />
