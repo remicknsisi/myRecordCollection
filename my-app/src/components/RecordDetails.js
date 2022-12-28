@@ -13,9 +13,13 @@ function RecordDetails({ records }) {
         <h1>{recordDetails.title}</h1>
         <h3>{recordDetails.artist}</h3>
         <ul>Side A Tracks:</ul>
-            <li>{recordDetails.sideA}</li>
+            {recordDetails.sideA.map(song =>
+                <li key={song}>{song}</li>
+            )}
         <ul>Side B Tracks:</ul>
-            <li>{recordDetails.sideB}</li>
+        {recordDetails.sideB.map(song =>
+                <li key={song}>{song}</li>
+            )}
     </div>
   );
 }
