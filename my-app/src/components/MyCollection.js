@@ -10,7 +10,7 @@ function MyCollection({ records }) {
         <ul className="collection">
             {records.map(record => {
                 return (
-                    <Record key={record.id} title={record.title} artist={record.artist} image={record.image} value={record.value} sideA={record.sideA} sideB={record.sideB}/>
+                    <Record record={record} key={record.id} title={record.title} artist={record.artist} image={record.image} value={record.value} sideA={record.sideA} sideB={record.sideB}/>
                 )
             })}
         </ul>
