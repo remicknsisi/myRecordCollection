@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router-dom";
 import NavBar from "./components/NavBar.js";
 import Home from "./components/Home.js";
 import MyCollection from "./components/MyCollection";
@@ -19,6 +19,21 @@ function App() {
     })
   }, [])
 
+  const history = useHistory();
+
+  function handleSubmit(newRecord){
+        fetch('http://localhost:3000/records', {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify(newRecord)
+        })
+        .then(response => response.json())
+        .then(newRecordData => {
+            setRecords([...records, newRecordData])
+            history.push(`/shop/${newRecordData.id}`)
+        })
+  }
+
   function handlePurchase(newRecord){
     setRecordsInCollection([...recordsInCollection, newRecord])
   }
@@ -34,7 +49,7 @@ function App() {
           <MyCollection records={recordsInCollection} />
         </Route>
         <Route exact path="/shop">
-          <RecordShop onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
+          <RecordShop onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
         </Route>
         <Route exact path="/shop/:id">
           <RecordDetails />

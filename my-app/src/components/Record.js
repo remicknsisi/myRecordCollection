@@ -15,11 +15,7 @@ function Record({ record, onPurchase }) {
             value: value,
             image: image
         }
-
-        // if (isInCollection){
-        // e.target.innerText = "Purchase"
-        // }
-        // else {e.target.innerText = "Already Owned - Donate?"}
+        
         onPurchase(recordForCollection)
     }
 
@@ -33,7 +29,7 @@ function Record({ record, onPurchase }) {
         <br></br>
         <br></br>
         {isInCollection ? (<button onClick={handleClick}>Already Owned - Donate?</button>) : (<button onClick={handleClick}>Purchase</button>)}
-        {/* need to make it so button only appears on shop page by filtering for record in collection state variable*/}
+        {/* need to make it so button only appears on shop page by filtering for record in collection state variable - also remove more details  button? or just fix the nav from getting /undefined*/}
     </div>
   );
 }
