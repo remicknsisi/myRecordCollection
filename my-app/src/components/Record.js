@@ -13,7 +13,7 @@ function Record({ record, onPurchase }) {
             title: title,
             artist: artist,
             value: value,
-            image: image,
+            image: image
         }
 
         // if (isInCollection){
@@ -32,10 +32,7 @@ function Record({ record, onPurchase }) {
         <Link to={`/shop/${id}`}>More Details</Link>
         <br></br>
         <br></br>
-        <button onClick={handleClick}>Purchase
-            {/* {isInCollection ? Purchase} */}
-            </button>
-        {/* define the buttron using ternary instead of in handle click */}
+        {isInCollection ? (<button onClick={handleClick}>Already Owned - Donate?</button>) : (<button onClick={handleClick}>Purchase</button>)}
         {/* need to make it so button only appears on shop page by filtering for record in collection state variable*/}
     </div>
   );
