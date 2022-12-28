@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 
 function NewRecordForm({ records, setRecords, onSubmit }) {
+
+  const [newTitle, setNewTitle] = useState('')
+  const [newImage, setNewImage] = useState('')
+  const [newValue, setNewValue] = useState('')
+  const [newArtist, setNewArtist] = useState('')
+
+  function handleTitleChange(e){
+    setNewTitle(e.target.value)
+  }
+  function handleImageChange(e){
+    setNewImage(e.target.value)
+  }
+  function handleValueChange(e){
+    setNewValue(e.target.value)
+  }
+  function handleArtistChange(e){
+    setNewArtist(e.target.value)
+  }
 
   function handleSubmit(e){
     e.preventDefault()
     
-    //make this into a controlled component 
     const newRecord ={
-      title: e.target.childNodes[0].value,
-      image: e.target.childNodes[1].value,
-      value: e.target.childNodes[2].value,
-      artist: e.target.childNodes[3].value
+      title: newTitle,
+      image: newImage,
+      value: newValue,
+      artist: newArtist
     }
 
     onSubmit(newRecord)
@@ -20,10 +37,10 @@ function NewRecordForm({ records, setRecords, onSubmit }) {
     <div className="submit-form" onSubmit={handleSubmit}>
         Can't find what you're looking for? Add to our inventory here...
       <form >
-        <input type="text" placeholder="Record title" />
-        <input type="text" placeholder="Image URL" />
-        <input type="number" placeholder="Price" />
-        <input type="text" placeholder="Artist name" />
+        <input type="text" onChange={handleTitleChange} value={newTitle} placeholder="Record title" />
+        <input type="text" onChange={handleImageChange} value={newImage} placeholder="Image URL" />
+        <input type="number" onChange={handleValueChange}value={newValue} placeholder="Price" />
+        <input type="text" onChange={handleArtistChange} value={newArtist} placeholder="Artist name" />
         <button type="submit">Find Record</button>
       </form>
     </div>

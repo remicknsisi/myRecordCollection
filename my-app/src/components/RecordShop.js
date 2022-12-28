@@ -4,6 +4,7 @@ import Search from "./Search"
 import NewRecordForm from "./NewRecordForm"
 
 function RecordShop({ search, setSearch, records, setRecords, onPurchase, onSubmit }) {
+
   return (
     <div className="shop">
         <div className="shop-name">Welcome to the Vinyl Shop!</div>
