@@ -101,3 +101,8 @@ img {
   display: inline-block;
   text-align: left;
 }
+
+.record-graphics {
+  margin:auto;
+  display: block;
+}
