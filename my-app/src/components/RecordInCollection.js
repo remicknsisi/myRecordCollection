@@ -7,6 +7,8 @@ function RecordInCollection({ record, onAdd }) {
     function handleClick(e){
         e.target.parentNode.remove()
         onAdd(value)
+
+        //also need to update the state in App componenet so that records in collection updates
     }
 
   return (
