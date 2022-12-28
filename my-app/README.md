@@ -4,7 +4,9 @@ For the Avid Music Listeners out there, I have developed the *My Vinyl Collector
 
 Start out in the 'Record Shop' window, where you can browse all the vinyls available to collect. By clicking on 'More Details', you will be redirected to view information like the side A and side B tracks, as well as a fun fact about that disc. Purchasing the album will automatically add that album to your 'My Collection' window and update the overall value of your collection.
 
-Looking for something specific? Skip the scroll and use the search bar at the top left of the storefront to search your desired record by title. And should our store not have the album you want in stock, feel free to put in a request to add it to our inventory! Submit the form at the top of our store by providing the title, album cover image address, price, and artist name.
+Looking for something specific? Skip the scroll and use the search bar at the top left of the storefront to search your desired record by title. And should our store not have the album you want in stock, feel free to put in a request to add it to our inventory! Submit the form at the top of our store by providing the title, album cover image address, price, and artist name. 
+
+Feel free to reference the GIF at the bottom of this README.md for a quick display of how to navigate this app!
 
 The records in our shop are currently nonexhaustive, and those stored in my project's db.json file only consist of some of my personal favorites. All images, titles, prices, and other information are borrowed from Target.com.
 

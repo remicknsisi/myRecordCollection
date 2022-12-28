@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 
 function Record({ title, artist, image, value, id, sideA, sideB, isInCollection, onPurchase }) {
 
+//jpass the entire record object to record and destructure it to get all of these props elements above
+    //no need for new obj to be built, can be passed in directly instead
+
+//define is in collection state here
+
     function handleClick(e){
         const recordForCollection = {
             title: e.target.parentNode.childNodes[1].innerText.split('Title: ')[1],
@@ -28,6 +33,7 @@ function Record({ title, artist, image, value, id, sideA, sideB, isInCollection,
         <br></br>
         <br></br>
         <button onClick={handleClick}>Purchase</button>
+        {/* define the buttron using ternary instead of in handle click */}
         {/* need to make it so button only appears on shop page by filtering for record in collection state variable*/}
     </div>
   );

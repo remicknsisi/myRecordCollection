@@ -1,13 +1,14 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-function NewRecordForm({ records, setRecords }) {
+function NewRecordForm({ records, setRecords, onSubmit }) {
 
   const history = useHistory();
 
   function handleSubmit(e){
     e.preventDefault()
     
+    //make this into a controlled component 
     const newRecord ={
       title: e.target.childNodes[0].value,
       image: e.target.childNodes[1].value,
@@ -15,7 +16,7 @@ function NewRecordForm({ records, setRecords }) {
       artist: e.target.childNodes[3].value
     }
 
-
+    //use callback to handle fetch in App component instead - records not responsibility of form
     fetch('http://localhost:3000/records', {
       method: "POST",
       headers: {"Content-Type": "application/json"},

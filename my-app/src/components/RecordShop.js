@@ -3,12 +3,12 @@ import Record from "./Record"
 import Search from "./Search"
 import NewRecordForm from "./NewRecordForm"
 
-function RecordShop({ records, setRecords, onSearchChange, isInCollection, onPurchase }) {
+function RecordShop({ search, setSearch, records, setRecords, onSearchChange, isInCollection, onPurchase }) {
   return (
     <div className="shop">
         <div className="shop-name">Welcome to the Vinyl Shop!</div>
         <NewRecordForm records={records} setRecords={setRecords}/>
-        <Search onSearchChange={onSearchChange} />
+        <Search search={search} setSearch={setSearch} />
         <div className="records-container">
         {records.map(record => {
             return (

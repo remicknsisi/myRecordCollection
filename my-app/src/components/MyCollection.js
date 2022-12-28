@@ -6,6 +6,7 @@ function MyCollection({ records }) {
     return (
     <div className="my-collection">
         <div className="my-records">My Vinyls</div>
+        <p>Total Value:</p>
         <ul className="collection">
             {records.map(record => {
                 return (

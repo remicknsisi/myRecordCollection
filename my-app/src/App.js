@@ -9,31 +9,22 @@ import RecordDetails from "./components/RecordDetails";
 function App() {
   const [records, setRecords] = useState([])
   const [isInCollection, setIsInCollection] = useState(false)
-  const [recordsToDisplay, setRecordsToDisplay] = useState([])
   const [recordsInCollection, setRecordsInCollection] = useState([])
+  const [search, setSearch] = useState('')
 
   useEffect(() => {
     fetch('http://localhost:3000/records')
     .then(res => res.json())
     .then(recordData => {
       setRecords(recordData)
-      setRecordsToDisplay(recordData)})
-  }, [])
-
-  function handleSearchChange(searchTerm){
-    console.log(searchTerm)
-    const newRecordToDisplay = records.filter(record => {
-      if (record.title.toLowerCase().includes(searchTerm))
-      return record
     })
-    setRecordsToDisplay(newRecordToDisplay)
-  }
+  }, [])
 
   function handlePurchase(newRecord){
     setIsInCollection(!isInCollection)
     setRecordsInCollection([...recordsInCollection, newRecord])
   }
-
+  const recordsToDisplay = records.filter(record => record.title.toLowerCase().includes(search))
 
   return (
     <div className="App">
@@ -45,7 +36,7 @@ function App() {
           <MyCollection records={recordsInCollection} />
         </Route>
         <Route exact path="/shop">
-          <RecordShop onPurchase={handlePurchase} isInCollection={isInCollection} records={recordsToDisplay} setRecords={setRecords} onSearchChange={handleSearchChange}/>
+          <RecordShop onPurchase={handlePurchase} isInCollection={isInCollection} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
         </Route>
         <Route exact path="/shop/:id">
           <RecordDetails />
