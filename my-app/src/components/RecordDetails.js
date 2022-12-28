@@ -5,9 +5,11 @@ function RecordDetails({ records }) {
   const { id } = useParams()
 
   const recordDetails = records.find(record => record.id == id)
+  console.log(recordDetails)
 
   return (
     <div className="record-details">
+        <img src={recordDetails.image} alt={recordDetails.image} />
         <h1>{recordDetails.title}</h1>
         <h3>{recordDetails.artist}</h3>
         <ul>Side A Tracks:</ul>
