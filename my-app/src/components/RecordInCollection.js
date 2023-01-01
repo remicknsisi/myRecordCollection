@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function RecordInCollection({ record, onAdd }) {    
+function RecordInCollection({ record, onAdd, onDonate }) {    
     const {title, artist, image, value, id} = record
 
     function handleClick(e){
-        e.target.parentNode.remove()
+        e.target.remove()
         onAdd(value)
-
-        //also need to update the state in App componenet so that records in collection update
+        onDonate(record)
     }
 
   return (
@@ -18,7 +17,7 @@ function RecordInCollection({ record, onAdd }) {
         <h4>Artist: {artist}</h4>
         <p>Price: ${value}</p>
         <Link to={`/shop/${id}`}>More Details</Link>
-        {/* need to fix this link here */}
+        {/* need to fix this link here - i think its because im coming from collection so the /collection is still there*/}
         <br></br>
         <br></br>
         <button onClick={handleClick}>Donate?</button>

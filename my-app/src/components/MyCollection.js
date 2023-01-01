@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import RecordInCollection from "./RecordInCollection"
 
-function MyCollection({ records }) {
+function MyCollection({ records, onDonate }) {
     const [collectionValue, setCollectionValue] = useState(0)
 
     function handleAdd(price){
@@ -18,7 +18,7 @@ function MyCollection({ records }) {
         <ul className="collection">
             {records.map(record => {
                 return (
-                    <RecordInCollection onAdd={handleAdd} record={record} key={record.id}/>
+                    <RecordInCollection onDonate={onDonate} onAdd={handleAdd} record={record} key={record.id}/>
                 )
             })}
         </ul>

@@ -37,6 +37,13 @@ function App() {
   function handlePurchase(newRecord){
     setRecordsInCollection([...recordsInCollection, newRecord])
   }
+  //maybe dont use state here to represent what is in the collection - try a const like below
+  function handleDonate(donatedRecord){
+    let newRecordsInCollection = recordsInCollection.filter(record => record !== donatedRecord)
+    setRecordsInCollection(newRecordsInCollection)
+  }
+
+
   const recordsToDisplay = records.filter(record => record.title.toLowerCase().includes(search))
 
   return (
@@ -46,7 +53,7 @@ function App() {
       <br></br>
       <Switch>
         <Route exact path="/collection">
-          <MyCollection records={recordsInCollection} />
+          <MyCollection onDonate={handleDonate} records={recordsInCollection} />
         </Route>
         <Route exact path="/shop">
           <RecordShop onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
