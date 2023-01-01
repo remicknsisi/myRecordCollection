@@ -5,9 +5,9 @@ function RecordInCollection({ record, onAdd, onDonate }) {
     const {title, artist, image, value, id} = record
 
     function handleClick(e){
+      onAdd(value)
+      onDonate(record)
         e.target.remove()
-        onAdd(value)
-        onDonate(record)
     }
 
   return (

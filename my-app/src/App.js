@@ -37,12 +37,13 @@ function App() {
   function handlePurchase(newRecord){
     setRecordsInCollection([...recordsInCollection, newRecord])
   }
-  //maybe dont use state here to represent what is in the collection - try a const like below
+  
   function handleDonate(donatedRecord){
     let newRecordsInCollection = recordsInCollection.filter(record => record !== donatedRecord)
     setRecordsInCollection(newRecordsInCollection)
   }
 
+  //define onAdd function here as well as the state variables and pass down to MyCollection
 
   const recordsToDisplay = records.filter(record => record.title.toLowerCase().includes(search))
 

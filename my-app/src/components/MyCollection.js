@@ -6,6 +6,7 @@ function MyCollection({ records, onDonate }) {
 
     function handleAdd(price){
         console.log(price)
+        setCollectionValue(price)
         // console.log(typeof record.value)
         // console.log(typeof collectionValue)
         // setCollectionValue(collectionValue + )
@@ -18,7 +19,7 @@ function MyCollection({ records, onDonate }) {
         <ul className="collection">
             {records.map(record => {
                 return (
-                    <RecordInCollection onDonate={onDonate} onAdd={handleAdd} record={record} key={record.id}/>
+                    <RecordInCollection key={record.title} onDonate={onDonate} onAdd={handleAdd} record={record} key={record.id}/>
                 )
             })}
         </ul>
