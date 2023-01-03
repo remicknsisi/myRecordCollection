@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function RecordInCollection({ record, onAdd, onDonate }) {    
+function RecordInCollection({ record, onDonate, collectionValue, setCollectionValue }) {    
     const {title, artist, image, value, id} = record
 
-    function handleClick(e){
-      onAdd(value)
+    function handleClick(){
+      setCollectionValue(collectionValue - value)
       onDonate(record)
-        e.target.remove()
     }
 
   return (

@@ -10,6 +10,7 @@ function App() {
   const [records, setRecords] = useState([])
   const [recordsInCollection, setRecordsInCollection] = useState([])
   const [search, setSearch] = useState('')
+  const [collectionValue, setCollectionValue] = useState(0)
 
   useEffect(() => {
     fetch('http://localhost:3000/records')
@@ -43,8 +44,6 @@ function App() {
     setRecordsInCollection(newRecordsInCollection)
   }
 
-  //define onAdd function here as well as the state variables and pass down to MyCollection
-
   const recordsToDisplay = records.filter(record => record.title.toLowerCase().includes(search))
 
   return (
@@ -54,10 +53,10 @@ function App() {
       <br></br>
       <Switch>
         <Route exact path="/collection">
-          <MyCollection onDonate={handleDonate} records={recordsInCollection} />
+          <MyCollection collectionValue={collectionValue} setCollectionValue={setCollectionValue} onDonate={handleDonate} records={recordsInCollection} />
         </Route>
         <Route exact path="/shop">
-          <RecordShop onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
+          <RecordShop collectionValue={collectionValue} setCollectionValue={setCollectionValue} onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
         </Route>
         <Route exact path="/shop/:id">
           <RecordDetails records={records}/>

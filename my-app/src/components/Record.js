@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Record({ record, onPurchase }) {
+function Record({ record, onPurchase, collectionValue, setCollectionValue }) {
     const [isInCollection, setIsInCollection] = useState(false)
     
     const {title, artist, image, value, id} = record
 
     function handleClick(){
+        setCollectionValue(collectionValue + value)
         setIsInCollection(!isInCollection)
 
         const recordForCollection = {
