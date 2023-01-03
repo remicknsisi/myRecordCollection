@@ -21,6 +21,7 @@ function App() {
   }, [])
 
   const history = useHistory();
+  console.log(history)
 
   function handleSubmit(newRecord){
         fetch('http://localhost:3000/records', {
@@ -31,9 +32,10 @@ function App() {
         .then(response => response.json())
         .then(newRecordData => {
             setRecords([...records, newRecordData])
-            history.push(`/shop/${newRecordData.id}`)
+            history.push(`/${newRecordData.id}`)
         })
   }
+  // why does my history push not work
 
   function handlePurchase(newRecord){
     setRecordsInCollection([...recordsInCollection, newRecord])
@@ -58,7 +60,7 @@ function App() {
         <Route exact path="/shop">
           <RecordShop collectionValue={collectionValue} setCollectionValue={setCollectionValue} onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
         </Route>
-        <Route exact path="/shop/:id">
+        <Route path="/:id">
           <RecordDetails records={records}/>
         </Route>
         <Route exact path="/">

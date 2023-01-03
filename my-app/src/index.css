@@ -50,11 +50,6 @@ img {
   padding: 25px;
 }
 
-.my-collection {
-  display:inline-block;
-
-}
-
 .records-container {
   display:inline-block;
 }
@@ -89,6 +84,11 @@ img {
   font-size: larger;
 }
 
+.collection-value {
+  text-align: center;
+
+}
+
 .record-details {
   text-align: center;
 }
@@ -105,4 +105,9 @@ img {
 .record-graphics {
   margin:auto;
   display: block;
+}
+
+.collect-more {
+  text-align: center;
+  color: red;
 }

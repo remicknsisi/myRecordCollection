@@ -15,8 +15,8 @@ function RecordInCollection({ record, onDonate, collectionValue, setCollectionVa
         <h3>Title: {title}</h3>
         <h4>Artist: {artist}</h4>
         <p>Price: ${value}</p>
-        <Link to={`/shop/${id}`}>More Details</Link>
-        {/* need to fix this link here - i think its because im coming from collection so the /collection is still there*/}
+        <Link to={`/${id}`}>More Details</Link>
+        {/* //why does this link tag break? */}
         <br></br>
         <br></br>
         <button onClick={handleClick}>Donate?</button>

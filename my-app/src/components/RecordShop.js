@@ -4,7 +4,6 @@ import Search from "./Search"
 import NewRecordForm from "./NewRecordForm"
 
 function RecordShop({ search, setSearch, records, onPurchase, onSubmit, collectionValue, setCollectionValue }) {
-  //pass down onAdd
 
   return (
     <div className="shop">

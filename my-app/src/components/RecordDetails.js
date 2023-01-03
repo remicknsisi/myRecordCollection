@@ -14,12 +14,12 @@ function RecordDetails({ records }) {
             <h3>{recordDetails.artist}</h3>
         </div>
         <div className="tracks-container">
-            <ul className="tracks">Side A Tracks:
+            <ul className="tracks"><b>Side A Tracks:</b>
                 {recordDetails.sideA.map(song =>
                     <li key={song}>{song}</li>
                 )}
             </ul>
-            <ul className="tracks">Side B Tracks:
+            <ul className="tracks"><b>Side B Tracks:</b>
             {recordDetails.sideB.map(song =>
                     <li key={song}>{song}</li>
                 )}

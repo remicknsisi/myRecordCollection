@@ -26,7 +26,7 @@ function Record({ record, onPurchase, collectionValue, setCollectionValue }) {
         <h3>Title: {title}</h3>
         <h4>Artist: {artist}</h4>
         <p>Price: ${value}</p>
-        <Link to={`/shop/${id}`}>More Details</Link>
+        <Link to={`/${id}`}>More Details</Link>
         <br></br>
         <br></br>
         {isInCollection ? (<button onClick={handleClick}>Already Owned</button>) : (<button onClick={handleClick}>Purchase</button>)}
