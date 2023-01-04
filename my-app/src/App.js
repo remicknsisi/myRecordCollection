@@ -35,7 +35,6 @@ function App() {
             history.push(`/${newRecordData.id}`)
         })
   }
-  // why does my history push not work
 
   function handlePurchase(newRecord){
     setRecordsInCollection([...recordsInCollection, newRecord])
@@ -60,7 +59,7 @@ function App() {
         <Route exact path="/shop">
           <RecordShop collectionValue={collectionValue} setCollectionValue={setCollectionValue} onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
         </Route>
-        <Route path="/:id">
+        <Route exact path="/:id">
           <RecordDetails records={records}/>
         </Route>
         <Route exact path="/">
