@@ -5,6 +5,7 @@ function RecordDetails({ records }) {
   const { id } = useParams()
 
   const recordDetails = records.find(record => record.id == id)
+  console.log(recordDetails)
 
   return (
     <div>
@@ -24,6 +25,8 @@ function RecordDetails({ records }) {
                     <li key={song}>{song}</li>
                 )}
             </ul>
+            {/* add conditional logic here so if there is no sideA or B avail, dont render this UL */}
+            {/* look into adding sidea/side b via the form */}
         </div>
         <br></br>
     </div>

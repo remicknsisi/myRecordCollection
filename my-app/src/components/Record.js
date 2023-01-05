@@ -10,14 +10,7 @@ function Record({ record, onPurchase, collectionValue, setCollectionValue }) {
         setCollectionValue(collectionValue + value)
         setIsInCollection(!isInCollection)
 
-        const recordForCollection = {
-            title: title,
-            artist: artist,
-            value: value,
-            image: image
-        }
-
-        onPurchase(recordForCollection)
+        onPurchase(record)
     }
 
   return (
@@ -26,7 +19,7 @@ function Record({ record, onPurchase, collectionValue, setCollectionValue }) {
         <h3>Title: {title}</h3>
         <h4>Artist: {artist}</h4>
         <p>Price: ${value}</p>
-        <Link to={`/${id}`}>More Details</Link>
+        <Link to={`/records/${id}`}>More Details</Link>
         <br></br>
         <br></br>
         {isInCollection ? (<button onClick={handleClick}>Already Owned</button>) : (<button onClick={handleClick}>Purchase</button>)}

@@ -9,13 +9,15 @@ function RecordInCollection({ record, onDonate, collectionValue, setCollectionVa
       onDonate(record)
     }
 
+    console.log(id, record)
+
   return (
     <div className="record-card">
         <img src={image} alt={title} />
         <h3>Title: {title}</h3>
         <h4>Artist: {artist}</h4>
         <p>Price: ${value}</p>
-        <Link to={`/${id}`}>More Details</Link>
+        <Link to={`/records/${id}`}>More Details</Link>
         <br></br>
         <br></br>
         <button onClick={handleClick}>Donate?</button>

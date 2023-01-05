@@ -21,7 +21,6 @@ function App() {
   }, [])
 
   const history = useHistory();
-  console.log(history)
 
   function handleSubmit(newRecord){
         fetch('http://localhost:3000/records', {
@@ -32,7 +31,7 @@ function App() {
         .then(response => response.json())
         .then(newRecordData => {
             setRecords([...records, newRecordData])
-            history.push(`/${newRecordData.id}`)
+            history.push(`/records/${newRecordData.id}`)
         })
   }
 
@@ -47,6 +46,12 @@ function App() {
 
   const recordsToDisplay = records.filter(record => record.title.toLowerCase().includes(search))
 
+  // const recordsInCOllection =
+  // add an attribute to all records in my collcetion for is in the collection that defaults to false use this to define in collection as a const
+  // implement PATCH for purchase
+
+  // set collection value --> to not rely on state, use reduce to calculate the sum of all values and update on re renders from setRecords
+
   return (
     <div className="App">
       <div className="title">My Vinyl Collector</div>
@@ -59,7 +64,7 @@ function App() {
         <Route exact path="/shop">
           <RecordShop collectionValue={collectionValue} setCollectionValue={setCollectionValue} onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
         </Route>
-        <Route exact path="/:id">
+        <Route exact path="/records/:id">
           <RecordDetails records={records}/>
         </Route>
         <Route exact path="/">
