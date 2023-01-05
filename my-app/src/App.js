@@ -9,7 +9,6 @@ import RecordDetails from "./components/RecordDetails";
 function App() {
   const [records, setRecords] = useState([])
   const [search, setSearch] = useState('')
-  const [collectionValue, setCollectionValue] = useState(0)
 
   useEffect(() => {
     fetch('http://localhost:3000/records')
@@ -68,7 +67,7 @@ function App() {
     })
   }
 
-  // set collection value --> to not rely on state, use reduce to calculate the sum of all values and update on re renders from setRecords
+  const valueOfCollection = recordsCollected.map(record => record.value).reduce((accumulator, currentValue) => accumulator + currentValue, 0)
 
   return (
     <div className="App">
@@ -77,10 +76,10 @@ function App() {
       <br></br>
       <Switch>
         <Route exact path="/collection">
-          <MyCollection collectionValue={collectionValue} setCollectionValue={setCollectionValue} onDonate={handleDonate} records={recordsCollected} />
+          <MyCollection collectionValue={valueOfCollection} onDonate={handleDonate} records={recordsCollected} />
         </Route>
         <Route exact path="/shop">
-          <RecordShop collectionValue={collectionValue} setCollectionValue={setCollectionValue} onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
+          <RecordShop collectionValue={valueOfCollection} onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
         </Route>
         <Route exact path="/records/:id">
           <RecordDetails records={records}/>

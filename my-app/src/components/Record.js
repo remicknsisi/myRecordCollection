@@ -7,7 +7,7 @@ function Record({ record, onPurchase, collectionValue, setCollectionValue }) {
     const {title, artist, image, value, id} = record
 
     function handleClick(){
-        setCollectionValue(collectionValue + value)
+        // setCollectionValue(collectionValue + value)
         setIsInCollection(!isInCollection)
         onPurchase(id)
     }

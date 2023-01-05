@@ -1,7 +1,7 @@
 import React from "react";
 import RecordInCollection from "./RecordInCollection"
 
-function MyCollection({ records, onDonate, collectionValue, setCollectionValue }) {
+function MyCollection({ records, onDonate, collectionValue }) {
 
     return (
     <div className="my-collection">
@@ -10,7 +10,7 @@ function MyCollection({ records, onDonate, collectionValue, setCollectionValue }
         {collectionValue === 0 ? <p className="collect-more">***Collect more Vinyls!***</p> : <ul className="collection">
             {records.map(record => {
                 return (
-                    <RecordInCollection collectionValue={collectionValue} setCollectionValue={setCollectionValue} onDonate={onDonate} record={record} key={record.id}/>
+                    <RecordInCollection collectionValue={collectionValue} onDonate={onDonate} record={record} key={record.id}/>
                 )
             })}
         </ul>}

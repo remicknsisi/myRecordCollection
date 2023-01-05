@@ -5,7 +5,7 @@ function RecordInCollection({ record, onDonate, collectionValue, setCollectionVa
     const {title, artist, image, value, id} = record
 
     function handleClick(){
-      setCollectionValue(collectionValue - value)
+      // setCollectionValue(collectionValue - value)
       onDonate(id)
     }
 
