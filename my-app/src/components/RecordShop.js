@@ -3,7 +3,7 @@ import Record from "./Record"
 import Search from "./Search"
 import NewRecordForm from "./NewRecordForm"
 
-function RecordShop({ search, setSearch, records, onPurchase, onSubmit, collectionValue }) {
+function RecordShop({ search, setSearch, records, onPurchase, onSubmit }) {
 
   return (
     <div className="shop">
@@ -13,7 +13,10 @@ function RecordShop({ search, setSearch, records, onPurchase, onSubmit, collecti
         <div className="records-container">
         {records.map(record => {
             return (
-                <Record collectionValue={collectionValue} record={record} onPurchase={onPurchase} key={record.id}/>
+                <Record 
+                record={record} 
+                onPurchase={onPurchase} 
+                key={record.id}/>
             )
         })}
         </div>

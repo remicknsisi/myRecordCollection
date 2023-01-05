@@ -76,13 +76,24 @@ function App() {
       <br></br>
       <Switch>
         <Route exact path="/collection">
-          <MyCollection collectionValue={valueOfCollection} onDonate={handleDonate} records={recordsCollected} />
+          <MyCollection 
+          collectionValue={valueOfCollection} 
+          onDonate={handleDonate} 
+          records={recordsCollected} />
         </Route>
         <Route exact path="/shop">
-          <RecordShop collectionValue={valueOfCollection} onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>
+          <RecordShop 
+          collectionValue={valueOfCollection} 
+          onSubmit={handleSubmit} 
+          onPurchase={handlePurchase} 
+          records={recordsToDisplay} 
+          setRecords={setRecords} 
+          search={search} 
+          setSearch={setSearch}/>
         </Route>
         <Route exact path="/records/:id">
-          <RecordDetails records={records}/>
+          <RecordDetails 
+          records={records}/>
         </Route>
         <Route exact path="/">
           <Home />

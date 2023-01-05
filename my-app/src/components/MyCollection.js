@@ -10,7 +10,10 @@ function MyCollection({ records, onDonate, collectionValue }) {
         {collectionValue === 0 ? <p className="collect-more">***Collect more Vinyls!***</p> : <ul className="collection">
             {records.map(record => {
                 return (
-                    <RecordInCollection collectionValue={collectionValue} onDonate={onDonate} record={record} key={record.id}/>
+                    <RecordInCollection 
+                    onDonate={onDonate} 
+                    record={record} 
+                    key={record.id}/>
                 )
             })}
         </ul>}

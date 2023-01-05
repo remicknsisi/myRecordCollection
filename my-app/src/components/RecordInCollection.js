@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function RecordInCollection({ record, onDonate, collectionValue, setCollectionValue }) {    
+function RecordInCollection({ record, onDonate }) {    
     const {title, artist, image, value, id} = record
 
     function handleClick(){
-      // setCollectionValue(collectionValue - value)
       onDonate(id)
     }
 
