@@ -6,10 +6,8 @@ function RecordInCollection({ record, onDonate, collectionValue, setCollectionVa
 
     function handleClick(){
       setCollectionValue(collectionValue - value)
-      onDonate(record)
+      onDonate(id)
     }
-
-    console.log(id, record)
 
   return (
     <div className="record-card">

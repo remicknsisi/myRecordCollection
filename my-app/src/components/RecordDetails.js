@@ -5,7 +5,6 @@ function RecordDetails({ records }) {
   const { id } = useParams()
 
   const recordDetails = records.find(record => record.id == id)
-  console.log(recordDetails)
 
   return (
     <div>

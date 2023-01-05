@@ -27,7 +27,8 @@ function NewRecordForm({ onSubmit }) {
       title: newTitle,
       image: newImage,
       value: newValue,
-      artist: newArtist
+      artist: newArtist,
+      inCollection: false
     }
 
     onSubmit(newRecord)

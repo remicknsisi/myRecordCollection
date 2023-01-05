@@ -6,6 +6,7 @@
       "artist": "Olivia Rodrigo",
       "image": "https://target.scene7.com/is/image/Target/GUEST_7ed46317-3de3-4582-a0eb-cd136bf25c62?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 25,
+      "inCollection": false,
       "sideA": [
         "brutal",
         "traitor",
@@ -28,6 +29,7 @@
       "artist": "Taylor Swift",
       "image": "https://target.scene7.com/is/image/Target/GUEST_361b1820-bb0a-430e-9515-91fee8c70281?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 29,
+      "inCollection": false,
       "sideA": [
         "I Forgot That You Existed",
         "Cruel Summer",
@@ -48,6 +50,7 @@
       "artist": "Billie Eilish",
       "image": "https://target.scene7.com/is/image/Target/GUEST_b92b5dfa-a71a-4c59-ae58-0e0b597f402c?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 26,
+      "inCollection": false,
       "sideA": [
         "!!!!!!!",
         "bad guy",
@@ -73,6 +76,7 @@
       "artist": "Billie Eilish",
       "image": "https://target.scene7.com/is/image/Target/GUEST_4b84d10a-0353-40d7-aad1-9587c3d34c62?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 23,
+      "inCollection": false,
       "sideA": [
         "COPYCAT",
         "idontwannabeyouanymore",
@@ -92,6 +96,7 @@
       "artist": "Harry Styles",
       "image": "https://target.scene7.com/is/image/Target/GUEST_8527d4b9-1e0e-4210-84c2-f641652aa5b8?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 38,
+      "inCollection": false,
       "sideA": [
         "Music For a Sushi Restaurant",
         "Late Night Talking",
@@ -116,6 +121,7 @@
       "artist": "Taylor Swift",
       "image": "https://target.scene7.com/is/image/Target/GUEST_d270440a-b129-4874-b8ea-13913b8dfe25?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 30,
+      "inCollection": false,
       "sideA": [
         "Lavender Haze",
         "Maroon",
@@ -140,6 +146,7 @@
       "artist": "Ariana Grande",
       "image": "https://target.scene7.com/is/image/Target/GUEST_2f152c11-30bb-4c94-83a3-4fce85cc2f38?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 30,
+      "inCollection": false,
       "sideA": [
         "imagine",
         "needy",
@@ -163,6 +170,7 @@
       "artist": "Beyonce",
       "image": "https://target.scene7.com/is/image/Target/GUEST_87efae6a-4a87-4e4e-a9da-251ffa634a94?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 40,
+      "inCollection": false,
       "sideA": [
         "I/'M THAT GIRL",
         "COZY",
@@ -190,6 +198,7 @@
       "artist": "Kacey Musgraves",
       "image": "https://target.scene7.com/is/image/Target/GUEST_01c902bd-df5d-4ddb-976f-c576d16ae824?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 26,
+      "inCollection": false,
       "sideA": [
         "Slow Burn",
         "Lonely Weekend",
@@ -214,6 +223,7 @@
       "artist": "The Chicks",
       "image": "https://target.scene7.com/is/image/Target/GUEST_9e735055-3761-4ca2-8b41-852c035d2538?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 35,
+      "inCollection": false,
       "sideA": [
         "Gaslighter",
         "Sleep at Night",
@@ -237,6 +247,7 @@
       "artist": "Fleetwood Mac",
       "image": "https://target.scene7.com/is/image/Target/GUEST_f094bccf-301d-4acc-a967-0fb63dfbfe9a?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 23,
+      "inCollection": false,
       "sideA": [
         "Second Hand News",
         "Dreams",
@@ -259,6 +270,7 @@
       "artist": "Chris Stapleton",
       "image": "https://target.scene7.com/is/image/Target/GUEST_7d968a9a-f746-4038-93c6-fb06991cb23d?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 26,
+      "inCollection": false,
       "sideA": [
         "Traveller",
         "Fire Away",
@@ -283,6 +295,7 @@
       "image": "https://target.scene7.com/is/image/Target/GUEST_7d8c1055-f1df-4dbd-861e-584bbdac1847?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": "15",
       "artist": "MGK",
+      "inCollection": false,
       "id": 13
     },
     {
@@ -291,6 +304,7 @@
       "artist": "Mac Miller",
       "image": "https://target.scene7.com/is/image/Target/GUEST_44dfbd9e-f892-40a6-bfd5-fd8ab3c0bff1?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 32,
+      "inCollection": false,
       "sideA": [
         "Circles",
         "Complicated",
@@ -314,6 +328,7 @@
       "artist": "Tyler, the Creator",
       "image": "https://target.scene7.com/is/image/Target/GUEST_50ac7dba-7291-4cc3-9c1e-d7f4b555f160?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 20,
+      "inCollection": false,
       "sideA": [
         "Foreword",
         "Where This Flower Blooms",
@@ -339,6 +354,7 @@
       "artist": "Childish Gambino",
       "image": "https://target.scene7.com/is/image/Target/GUEST_fc36beac-8205-414c-aef5-5b90aa3d3261?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 28,
+      "inCollection": false,
       "sideA": [
         "Me and Your Mama",
         "Have Some Love",
@@ -361,6 +377,7 @@
       "artist": "The Weeknd",
       "image": "https://target.scene7.com/is/image/Target/GUEST_d7140dc5-a382-4d97-be96-1b9063be7d70?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 40,
+      "inCollection": false,
       "sideA": [
         "Starboy",
         "Party Monster",
@@ -390,6 +407,7 @@
       "artist": "Lana Del Rey",
       "image": "https://target.scene7.com/is/image/Target/GUEST_974a829c-8e1c-45a8-8e23-0a4baade1bec?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": 16,
+      "inCollection": false,
       "sideA": [
         "Born to Die",
         "Off to the Races",
@@ -412,6 +430,7 @@
       "image": "https://target.scene7.com/is/image/Target/GUEST_254537e6-ab7f-4164-adca-44b31e0c0960?wid=800&hei=800&qlt=80&fmt=pjpeg",
       "value": "27",
       "artist": "Jack Johnson",
+      "inCollection": false,
       "id": 19
     },
     {
@@ -419,28 +438,8 @@
       "image": "https://target.scene7.com/is/image/Target/GUEST_a8f691bb-b845-488a-baf3-71c6f65f50f1?wid=1000&hei=1000&qlt=80&fmt=webp",
       "value": "25",
       "artist": "The Beatles",
+      "inCollection": false,
       "id": 20
-    },
-    {
-      "title": "test",
-      "image": "test",
-      "value": "5",
-      "artist": "res",
-      "id": 21
-    },
-    {
-      "title": "res",
-      "image": "tes",
-      "value": "5",
-      "artist": "r",
-      "id": 22
-    },
-    {
-      "title": "dfs",
-      "image": "dfs",
-      "value": "4",
-      "artist": "sdf",
-      "id": 23
     }
   ]
 }

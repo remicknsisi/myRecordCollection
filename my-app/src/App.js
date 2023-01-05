@@ -8,7 +8,6 @@ import RecordDetails from "./components/RecordDetails";
 
 function App() {
   const [records, setRecords] = useState([])
-  const [recordsInCollection, setRecordsInCollection] = useState([])
   const [search, setSearch] = useState('')
   const [collectionValue, setCollectionValue] = useState(0)
 
@@ -19,6 +18,10 @@ function App() {
       setRecords(recordData)
     })
   }, [])
+
+  const recordsToDisplay = records.filter(record => record.title.toLowerCase().includes(search))
+
+  const recordsCollected = records.filter(record => record.inCollection === true)
 
   const history = useHistory();
 
@@ -35,20 +38,35 @@ function App() {
         })
   }
 
-  function handlePurchase(newRecord){
-    setRecordsInCollection([...recordsInCollection, newRecord])
+  function handlePurchase(id){
+    fetch(`http://localhost:3000/records/${id}`, {
+      method: 'PATCH',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        "inCollection": true
+      })
+    })
+    .then(res => res.json())
+    .then(updatedRecord => {
+      const updatedRecords = records.filter(record => record.id !== updatedRecord.id)
+      setRecords([...updatedRecords, updatedRecord])
+    })
   }
   
-  function handleDonate(donatedRecord){
-    let newRecordsInCollection = recordsInCollection.filter(record => record !== donatedRecord)
-    setRecordsInCollection(newRecordsInCollection)
+  function handleDonate(id){
+    fetch(`http://localhost:3000/records/${id}`, {
+      method: 'PATCH',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        "inCollection": false
+      })
+    })
+    .then(res => res.json())
+    .then(updatedRecord => {
+      const updatedRecordsInCollection = records.filter(record => record.id !== updatedRecord.id)
+      setRecords([...updatedRecordsInCollection, updatedRecord])
+    })
   }
-
-  const recordsToDisplay = records.filter(record => record.title.toLowerCase().includes(search))
-
-  // const recordsInCOllection =
-  // add an attribute to all records in my collcetion for is in the collection that defaults to false use this to define in collection as a const
-  // implement PATCH for purchase
 
   // set collection value --> to not rely on state, use reduce to calculate the sum of all values and update on re renders from setRecords
 
@@ -59,7 +77,7 @@ function App() {
       <br></br>
       <Switch>
         <Route exact path="/collection">
-          <MyCollection collectionValue={collectionValue} setCollectionValue={setCollectionValue} onDonate={handleDonate} records={recordsInCollection} />
+          <MyCollection collectionValue={collectionValue} setCollectionValue={setCollectionValue} onDonate={handleDonate} records={recordsCollected} />
         </Route>
         <Route exact path="/shop">
           <RecordShop collectionValue={collectionValue} setCollectionValue={setCollectionValue} onSubmit={handleSubmit} onPurchase={handlePurchase} records={recordsToDisplay} setRecords={setRecords} search={search} setSearch={setSearch}/>

@@ -9,8 +9,7 @@ function Record({ record, onPurchase, collectionValue, setCollectionValue }) {
     function handleClick(){
         setCollectionValue(collectionValue + value)
         setIsInCollection(!isInCollection)
-
-        onPurchase(record)
+        onPurchase(id)
     }
 
   return (
