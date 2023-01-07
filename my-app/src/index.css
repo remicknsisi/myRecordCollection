@@ -100,6 +100,7 @@ img {
 .tracks {
   display: inline-block;
   text-align: left;
+  vertical-align: top;
 }
 
 .record-graphics {
@@ -114,4 +115,14 @@ img {
 
 .tracks-input {
   width: 225px
+}
+
+#tracks-A {
+  display:inline-block;
+  position:absolute
+}
+
+#tracks-B {
+  display:inline-block;
+  position:absolute
 }

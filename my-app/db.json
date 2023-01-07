@@ -172,7 +172,7 @@
       "value": 40,
       "inCollection": false,
       "sideA": [
-        "I/'M THAT GIRL",
+        "I'M THAT GIRL",
         "COZY",
         "ALIEN SUPERSTAR",
         "CUFF IT",
@@ -182,7 +182,7 @@
       ],
       "sideB": [
         "PLASTIC OFF THE SOFA",
-        "VIRGO/'S GROOVE",
+        "VIRGO'S GROOVE",
         "MOVE",
         "HEATED",
         "THIQUE",
@@ -237,7 +237,7 @@
         "Tights On My Boat",
         "Julianna Calm Down",
         "Young Man",
-        "Hope It/'s Something Good",
+        "Hope It's Something Good",
         "Set Me Free"
       ]
     },
@@ -252,14 +252,14 @@
         "Second Hand News",
         "Dreams",
         "Never Going Back Again",
-        "Don/'t Stop",
+        "Don't Stop",
         "Go Your Own Way",
         "Songbird"
       ],
       "sideB": [
         "The Chain",
         "You Make Loving Fun",
-        "I Don/'t Want to Know",
+        "I Don't Want to Know",
         "Oh Daddy",
         "Gold Dust Woman"
       ]
@@ -282,7 +282,7 @@
       ],
       "sideB": [
         "When The Stars Come Out",
-        "Daddy Doesn/'t Pray Anymore",
+        "Daddy Doesn't Pray Anymore",
         "Might As Well Get Stoned",
         "Was It 26",
         "The Devil Named Music",
@@ -316,7 +316,7 @@
       "sideB": [
         "Woods",
         "Hand Me Downs",
-        "That/'s On Me",
+        "That's On Me",
         "Hands",
         "Surf",
         "Once A Day"
@@ -340,7 +340,7 @@
       ],
       "sideB": [
         "Boredom",
-        "I Ain/'t Got Time!",
+        "I Ain't Got Time!",
         "911/Mr. Lonely",
         "Droppin Seeds",
         "November",
@@ -431,7 +431,21 @@
       "value": 27,
       "artist": "Jack Johnson",
       "inCollection": false,
-      "id": 19
+      "id": 19,
+      "sideA": [
+        "Meet the Moonlight",
+        "3AM Radio",
+        "Any Wonder",
+        "I Tend to Digress",
+        "Costume Party"
+      ],
+      "sideB": [
+        "Windblown Eyes",
+        "Calm Down",
+        "Open Mind",
+        "Don't Look Now",
+        "One Step Ahead"
+      ]
     },
     {
       "title": "Abbey Road",
@@ -439,7 +453,28 @@
       "value": 25,
       "artist": "The Beatles",
       "inCollection": false,
-      "id": 20
+      "id": 20,
+      "sideA": [
+        "Something",
+        "I Want You (She's So Heavy)",
+        "Golden Slumbers",
+        "Octopus's Garden",
+        "Maxwell's Silver Hammer",
+        "Here Comes the Sun",
+        "Her Majesty",
+        "Sun King",
+        "Polythene Pam"
+      ],
+      "sideB": [
+        "You Never Give Me Your Money",
+        "Mean Mr. Mustard",
+        "The End",
+        "Carry That Weight",
+        "Come Together",
+        "Oh! Darling",
+        "Because",
+        "She Came In Through the Bathroom Window"
+      ]
     }
   ]
 }

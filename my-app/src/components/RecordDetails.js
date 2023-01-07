@@ -14,19 +14,18 @@ function RecordDetails({ records }) {
             <h3>{recordDetails.artist}</h3>
         </div>
         <div className="tracks-container">
-            <ul className="tracks"><b>Side A Tracks:</b>
+        <b id="tracks-A">Side A Tracks:</b>
+            <ul className="tracks">
                 {recordDetails.sideA.map(song =>
                     <li key={song}>{song}</li>
                 )}
             </ul>
-            <ul className="tracks"><b>Side B Tracks:</b>
+        <b id="tracks-B">Side B Tracks:</b>
+            <ul className="tracks">
             {recordDetails.sideB.map(song =>
                     <li key={song}>{song}</li>
                 )}
             </ul>
-            {/* add conditional logic here so if there is no sideA or B avail, dont render this UL */}
-            {/* look into adding sidea/side b via the form */}
-            {/* will also need to add a and b to the items in teh json file that dont have them */}
         </div>
         <br></br>
     </div>

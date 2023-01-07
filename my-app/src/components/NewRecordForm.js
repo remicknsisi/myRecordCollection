@@ -36,7 +36,7 @@ function NewRecordForm({ onSubmit }) {
     const newRecord ={
       title: newTitle,
       image: newImage,
-      value: newValue,
+      value: parseInt(newValue),
       artist: newArtist,
       inCollection: false,
       sideA: newSideA.split(', '),
