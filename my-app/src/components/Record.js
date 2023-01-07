@@ -8,7 +8,7 @@ function Record({ record, onPurchase }) {
 
     function handleClick(){
         setIsInCollection(!isInCollection)
-        onPurchase(id)
+        onPurchase(id, record)
     }
 
   return (

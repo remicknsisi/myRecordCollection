@@ -37,7 +37,7 @@ function App() {
         })
   }
 
-  function handlePurchase(id){
+  function handlePurchase(id, record){
     fetch(`http://localhost:3000/records/${id}`, {
       method: 'PATCH',
       headers: {"Content-Type": "application/json"},
@@ -47,12 +47,13 @@ function App() {
     })
     .then(res => res.json())
     .then(updatedRecord => {
-      const updatedRecords = records.filter(record => record.id !== updatedRecord.id)
-      setRecords([...updatedRecords, updatedRecord])
+      const index = records.indexOf(record)
+      records[index] = updatedRecord
+      setRecords([...records])
     })
   }
   
-  function handleDonate(id){
+  function handleDonate(id, record){
     fetch(`http://localhost:3000/records/${id}`, {
       method: 'PATCH',
       headers: {"Content-Type": "application/json"},
@@ -62,8 +63,9 @@ function App() {
     })
     .then(res => res.json())
     .then(updatedRecord => {
-      const updatedRecordsInCollection = records.filter(record => record.id !== updatedRecord.id)
-      setRecords([...updatedRecordsInCollection, updatedRecord])
+      const index = records.indexOf(record)
+      records[index] = updatedRecord
+      setRecords([...records])
     })
   }
 
