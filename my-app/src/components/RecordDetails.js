@@ -26,6 +26,7 @@ function RecordDetails({ records }) {
             </ul>
             {/* add conditional logic here so if there is no sideA or B avail, dont render this UL */}
             {/* look into adding sidea/side b via the form */}
+            {/* will also need to add a and b to the items in teh json file that dont have them */}
         </div>
         <br></br>
     </div>

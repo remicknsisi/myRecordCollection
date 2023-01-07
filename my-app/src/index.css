@@ -111,3 +111,7 @@ img {
   text-align: center;
   color: red;
 }
+
+.tracks-input {
+  width: 225px
+}

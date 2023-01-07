@@ -293,7 +293,7 @@
     {
       "title": "Tickets to my Downfall",
       "image": "https://target.scene7.com/is/image/Target/GUEST_7d8c1055-f1df-4dbd-861e-584bbdac1847?wid=800&hei=800&qlt=80&fmt=pjpeg",
-      "value": "15",
+      "value": 15,
       "artist": "MGK",
       "inCollection": false,
       "id": 13
@@ -428,7 +428,7 @@
     {
       "title": "Meet the Moonlight",
       "image": "https://target.scene7.com/is/image/Target/GUEST_254537e6-ab7f-4164-adca-44b31e0c0960?wid=800&hei=800&qlt=80&fmt=pjpeg",
-      "value": "27",
+      "value": 27,
       "artist": "Jack Johnson",
       "inCollection": false,
       "id": 19
@@ -436,7 +436,7 @@
     {
       "title": "Abbey Road",
       "image": "https://target.scene7.com/is/image/Target/GUEST_a8f691bb-b845-488a-baf3-71c6f65f50f1?wid=1000&hei=1000&qlt=80&fmt=webp",
-      "value": "25",
+      "value": 25,
       "artist": "The Beatles",
       "inCollection": false,
       "id": 20
