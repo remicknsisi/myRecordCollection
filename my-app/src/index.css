@@ -119,10 +119,12 @@ img {
 
 #tracks-A {
   display:inline-block;
-  position:absolute
+  position:absolute;
+
 }
 
 #tracks-B {
   display:inline-block;
-  position:absolute
+  position:absolute;
+  padding-left: 15px;
 }
