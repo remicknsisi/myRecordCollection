@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
-function Record({ record, onPurchase }) {
-    const [isInCollection, setIsInCollection] = useState(false)
+function Record({ record, onClickRecord, inCollectionCard }) {
     
-    const {title, artist, image, value, id} = record
+    const {title, artist, image, value, id, inCollection} = record
 
     function handleClick(){
-        setIsInCollection(!isInCollection)
-        onPurchase(id, record)
+        onClickRecord(id, record)
     }
 
   return (
@@ -20,7 +18,7 @@ function Record({ record, onPurchase }) {
         <Link to={`/records/${id}`}>More Details</Link>
         <br></br>
         <br></br>
-        {isInCollection ? (<button onClick={handleClick}>Already Owned</button>) : (<button onClick={handleClick}>Purchase</button>)}
+        {inCollectionCard ? <button onClick={handleClick}>Donate?</button> : inCollection ? (<button onClick={handleClick}>Already Owned</button>) : (<button onClick={handleClick}>Purchase</button>)}
     </div>
   );
 }
